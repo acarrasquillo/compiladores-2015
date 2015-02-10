@@ -1,2 +1,6 @@
 # compiladores-2015
-SML Compilers Course Spring 2015
+CCOM 4087 SML Compiler Course Spring 2015
+Abimael Carrasquillo
+
+This repo contains the material from the spring 2015 compilers course offered by Humberto Ortiz-Zuazaga <humberto.ortiz@upr.edu>.
+Some of the code contains code from the templates provided on class to finish the exercises.
