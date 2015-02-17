@@ -41,7 +41,7 @@ letter = [A-Za-z];
 <INITIAL>"}" => (Tokens.RBRACE(yypos,yypos+1));
 <INITIAL>" " => (continue());
 <INITIAL>\" => (YYBEGIN STRING; continue());
-<INITIAL>"(*" => (YYBEGIN COMMENT; continue());
+<INITIAL>"/*" => (YYBEGIN COMMENT; continue());
 
 <INITIAL>var  	=> (Tokens.VAR(yypos,yypos+3));
 <INITIAL>while => (Tokens.WHILE(yypos, yypos+5));
@@ -68,5 +68,5 @@ letter = [A-Za-z];
 <STRING>[^"]* => (Tokens.STRING(yytext, yypos, yypos+size(yytext)));
 <STRING>\" => (YYBEGIN INITIAL; continue());
 
-<COMMENT>"*)" => (YYBEGIN INITIAL; continue());
+<COMMENT>"*/" => (YYBEGIN INITIAL; continue());
 <COMMENT>. => (continue());

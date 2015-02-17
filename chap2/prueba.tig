@@ -41,4 +41,4 @@ array
 "STRING"
 123
 id
-(* COMENTS *)
+/* COMENTS */
