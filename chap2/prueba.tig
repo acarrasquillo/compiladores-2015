@@ -33,12 +33,17 @@ array
 {
 ]
 [
+{}
+[]
+()
 )
 (
 ;
 :
 ,
-"STRING"
+"\n\t\123\n\tString with integer left brace escaped.\n\tNewline escaped\n\tand tabs escaped\n\talso right brace integer \ 
+\ character escaped. Also we escape the \", \\\^G"
 123
 id
-/* COMENTS */
+/* /* /* COMENTS */ */ */
+"Hola"

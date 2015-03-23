@@ -1,0 +1,6 @@
+let 
+	type inttype = array of inttype
+
+in
+	1+2
+end

@@ -1,0 +1,10 @@
+let
+ var a := 5
+ var b := "Hello"
+ function treeLeaves(t: trees) : int = 1 
+in
+ treeLeaves(a,b)
+ a + b;
+ b + a;
+ c + a
+end
